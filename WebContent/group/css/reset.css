@@ -1,0 +1,90 @@
+/* CSS reset */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td { 
+	margin:0;
+	padding:0;
+}
+html,body {
+	margin:0;
+	padding:0;
+}
+table {
+	/* border-collapse:collapse;
+	border-spacing:0; */
+	border-top-width : 0px;
+	border-right-width : 0px;
+	border-bottom-width : 0px;
+	border-left-width : 0px;
+	border-spacing : 0px;
+}
+table {
+	display : table;
+	border-collapse : separate;
+	/* border-spacing : 2px; */
+	border-color : grey;
+}
+.ei-slider-thumbs .meet_board {
+	clear : both;
+	margin-left : 150px;
+	width : 500%;
+}
+.meet_board .bg-color {
+	background-color : #f3f3f3;
+}
+.meet_board td {
+	border-collapse : collapse;
+	word-break : break-all;
+}
+.p11 {
+	font-size : 11px;
+	letter-spacing : -1px;
+	padding : 7px 0 5px 0;
+}
+fieldset,img { 
+	border:0;
+}
+input{
+	border:1px solid #b0b0b0;
+	padding:3px 5px 4px;
+	color:#979797;
+	width:190px;
+}
+address,caption,cite,code,dfn,th,var {
+	font-style:normal;
+	font-weight:normal;
+}
+ol,ul {
+	list-style:none;
+}
+caption,th {
+	text-align:center;
+}
+td {
+	display : table-cell;
+	vertical-align : inherit;
+	font-family : 'µ¸¿ò', dotum,Helvetica,sans-serif;
+}
+.board-line {
+	height : 3px !important;
+	background-color : #d4d4d4;
+	padding : 0;
+	font-size : 0;
+	line-height : 0;
+	overflow : hidden;
+}
+.board-line1 {
+	height : 1px;
+	background-color : #d4d4d4;
+	padding : 0;
+	font-size : 0;
+	line-height : 0;
+	overflow : hidden;
+}
+h1,h2,h3,h4,h5,h6 {
+	font-size:100%;
+	font-weight:normal;
+}
+q:before,q:after {
+	content:'';
+}
+abbr,acronym { border:0;
+}

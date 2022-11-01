@@ -1,0 +1,109 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+   <meta charset="UTF-8">
+   <title></title>
+   <script type="text/javascript">
+   function insertinfo(){
+   var name = document.getElementById('name').value;
+   var age = document.getElementById('age').value;
+   var tel = document.getElementById('tel').value;
+   var addr = document.getElementById('addr').value;
+   
+   var table = document.getElementById("listTable");
+   
+   var trElement = document.createElement("tr");
+   
+   var tdElement = document.createElement("td")
+   var tdElement1 = document.createElement("td");
+   var tdElement2 = document.createElement("td");
+   var tdElement3 = document.createElement("td");
+   var tdElement4 = document.createElement("td");   
+   
+   var txtElement = document.createElement("input");
+   var att = document.createAttribute("name");   
+      txtElement.setAttribute("type","checkbox");
+      //txtElement.setAttributeNode(att);
+      //txtElement.setAttribute("name","check");
+   var txtElement1 = document.createTextNode(name);
+   var txtElement2 = document.createTextNode(age);
+   var txtElement3 = document.createTextNode(tel);
+   var txtElement4 = document.createTextNode(addr);
+   
+   tdElement.appendChild(txtElement);
+   tdElement1.appendChild(txtElement1);
+   tdElement2.appendChild(txtElement2);
+   tdElement3.appendChild(txtElement3);
+   tdElement4.appendChild(txtElement4);
+   
+   trElement.appendChild(tdElement);
+   trElement.appendChild(tdElement1);
+   trElement.appendChild(tdElement2);
+   trElement.appendChild(tdElement3);
+   trElement.appendChild(tdElement4);
+
+   table.appendChild(trElement);
+
+   }
+
+   function deleteRow(){
+   var checkList= document.getElementsByTagName('input');
+   var table = document.getElementById("listTable");
+   for (var i =0; i<checkList.length; i++)
+   {
+      if(checkList.item(i).type =='checkbox'){
+      if(checkList.item(i).checked){
+         var vparent =checkList[i].parentNode;
+         var vgparent =vparent.parentNode;
+         var vggparent = vgparent.parentNode;
+         table.removeChild(vgparent);
+         i--;
+         }
+      }
+
+   }
+   
+   }
+   </script>
+</head>
+<body>
+   <form name="frm" id="frm">
+   
+
+   <h1>고객정보입력</h1>
+   <table border = "1" id ="infotable">
+   <tr>
+      <th width = "120" id ="name1">Name</th>
+      <th width = "100" id ="age1">Age</th>
+      <th width = "150" id = "tel1">Tel</th>
+      <th width = "200" id ="addr1">Addr</th>
+   </tr>
+   <tr>
+      <td><input type="text" id ="name"/></td>
+      <td><input type="text" id ="age" /></td>
+      <td><input type="text"  id ="tel"/></td>
+      <td align = "center"><input type="text" id ="addr" /></td>
+   </tr>
+   <tr>
+      <td colspan ="4"><center><input type="button" id="btn" value="입력" onclick ="javascript:insertinfo()"/></center></td>
+   </tr>
+   </table>
+   <br />
+   <hr />
+   <br />
+   <h1>고객정보 목록보기</h1>
+   <table border ="1" id ="listTable" name = "listTable">
+   <tr>
+   <td></td>
+   <th width = "120">Name</th>
+   <th width = "100">Age</th>
+   <th width = "150">Tel</th>
+   <th width = "200">Addr</th>
+   </tr>
+
+   </table>
+   <input type="button" value ="삭제" id = "delBtn" onclick = "javascript:deleteRow()" />
+   </form>
+
+</body>
+</html>

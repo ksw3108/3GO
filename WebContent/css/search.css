@@ -1,0 +1,219 @@
+	.doc {
+		position : relative;
+		width : 1100px;
+		height : 400px;
+		margin : 0 auto;
+	}
+	
+	body {
+		font-size : 0.87em;
+		line-height : 1.6;
+		font-family :  "ngn","Nanum Gothic","shm","µ¸¿ò",dotum,"Lucida Grande",sans-serif;
+		color : #000;
+	}
+	
+	div {
+		word-wrap : break-word;
+		margin : 0;
+		padding : 0;
+		border : 0;
+		display : block;
+	}
+
+	.viewType2 {
+		overflow : hidden;
+ 		background : url(http://tong.visitkorea.or.kr/img/vk/kor/bz15/where/where_pattern.gif);
+						    background-image: url("http://tong.visitkorea.or.kr/img/vk/kor/bz15/where/where_pattern.gif");
+						    background-position-x: initial;
+						    background-position-y: initial;
+						    background-size: initial;
+						    background-repeat-x: initial;
+						    background-repeat-y: initial;
+						    background-attachment: initial;
+						    background-origin: initial;
+						    background-clip: initial;
+						    background-color: initial;
+	}
+	
+	.thumbWrap {
+		/* padding : 0 0 60px; */
+		height : 400px;
+	}
+	
+	.thumbWrap figure {
+		position : relative;
+		display : block;
+	}
+	
+	.thumbWrap figure .grap {
+		position : relative;
+		float : left;
+		height : 341px;
+	}
+	
+	.thumbWrap figure .obj {
+		position : relative;
+		width : 700px;
+		/* height : auto; */
+		height : 300px;
+		overflow : hidden;
+	}
+	
+/*  	.thumbWrap figure .control {
+		position : absolute;
+		bottom : 0;
+		right : 0;
+	}
+	
+	.thumbWrap figure .control [rel="prev"] {
+		background-position : 0 0;
+	}
+	.thumbWrap figure .control [rel="stop"] {
+		background-position : -48px 0;
+	}
+	.thumbWrap figure .control [rel="play"] {
+		display : none;
+		background-position : -96px 0;
+	}
+	.thumbWrap figure .control [rel="next"] {
+		background-position : -144px 0;
+	}
+	
+	.thumbWrap figure .control [rel] {
+		float : left;
+		width : 48px;
+		height : 50px;
+		background : url(http://tong.visitkorea.or.kr/img/vk/kor/bz15/common/view_thumb_control.png) no-repeat;
+	}
+	
+	.go-button {
+		display : block;
+		padding : 0;
+		border-width : 0;
+	}
+	
+	.go-ir {
+		display : block;
+		width : 100%;
+		height : 100%;
+		overflow : hidden;
+	}
+	
+	button {
+		cursor : pointer;
+	} */
+	
+	figcaption {
+		display : block;
+	}
+	
+	.thumbWrap figure figcaption {
+		float : right;
+	}
+	
+	.thumbWrap figure figcaption {
+		width: 400px;
+    	font-size: small;
+    	margin-top : 30px;
+	}
+	
+	ul {
+		list-style : none;
+		list-style-image : none;
+	}
+	
+	ul {
+		word-wrap : break-word;
+		margin : 0;
+		padding : 0;
+		border : 0;
+	}
+	
+	.thumbWrap figure figcaption ul {
+		border : solid #aaa;
+		border-width : 3px 0 1px;
+		border-top-color : #e6490c;
+	}
+	
+	li{
+		display : list-item;
+		text-align : -webkit-match-parent;
+	}
+		
+	.thumbWrap figure figcaption ul li:first-child {
+		border-top-width : 0;
+	}
+	
+	.thumbWrap figure figcaption ul li {
+		padding : 10px;
+		border-top : 1px solid #dbdbdb;
+	}
+	
+	b {
+		font-weight : bold;
+	}
+	
+	.thumbWrap figure figcaption ul li b {
+		padding-left : 15px;
+		width : 20%;
+		color : #333;
+		background :  url(http://tong.visitkorea.or.kr/img/vk/kor/bz15/where/view/thumb_bul.png) no-repeat 0 11px;
+	}
+	
+	.thumbWrap figure figcaption ul li * {
+		display : inline-block;
+		vertical-align : top;
+	}
+	
+	span {
+		line-height : 1.6;
+	}
+	
+	.thumbWrap figure figcaption ul li span {
+		width : 75%;
+		color : #333;
+	}
+	
+	.thumbWrap .buttonSet {
+		float : right;
+		/* width : 525px; */
+		margin-top : 33px;
+		text-align : right;
+	}
+	
+	a, a:hover{
+		text-decoration : none;
+		color : #333;
+		line-height : 1.6px;
+	}
+	
+	a:link {
+		color : #666;
+	}
+	
+	.thumbWrap .buttonSet a {
+		padding : 6px 5px 5px;
+		margin : 5px 0 3px 3px;
+		font-weight : 600;
+		font-size : 14px;
+		border-radius : 2px;
+		color : #fff;
+	}
+	
+	.thumbWrap .buttonSet .tourInfo {
+		background : #747474;
+	}
+	
+	.thumbWrap .buttonSet .siteLink {
+		background : #8DB72A;
+	}
+	
+	.thumbWrap .buttonSet .viewMap {
+		background : #FFA7A7;
+	}
+
+	.obj img {
+		width: 400px;
+		margin-left : 150px;
+		margin-top : 28px;
+	}
